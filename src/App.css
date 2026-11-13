@@ -1,0 +1,109 @@
+body {
+  background-color: #f4f7f6; /* Fondo suave */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Diseño centrado con Flexbox */
+  margin: 0;
+  padding: 40px;
+}
+
+.contenedor-principal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-form button {
+  background-color: #007bff; /* Azul para agregar */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form button:hover { background-color: #0056b3; }
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s; /* Efecto hover en las tareas */
+}
+
+.task-item:hover { background-color: #f9f9f9; }
+
+.task-text {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Estilo tachado cuando la tarea está completada */
+.completada .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-eliminar {
+  background-color: #dc3545; /* Rojo para eliminar */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-eliminar:hover { background-color: #c82333; }
+
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filtros button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Verde para el filtro seleccionado */
+.filtros button.activo {
+  background-color: #28a745; 
+  color: white;
+  border-color: #28a745;
+}
+
+.task-stats {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 0.9em;
+}
