@@ -60,7 +60,7 @@ function App() {
 
   return (
   <div className="contenedor-principal">
-    <h1>Mini To-Do App</h1>
+    <h1>Mi-Todo-App</h1>
 
     <TaskForm addTask={addTask} />
     <TaskFilter filter={filter} setFilter={setFilter} />
